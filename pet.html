@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPals | Premium Pet Care & Boarding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-primary: #e67e22;
+            --brand-secondary: #2d3436;
+            --brand-bg: #fdfaf7;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--brand-bg); }
+        h1, h2, h3 { font-family: 'Quicksand', sans-serif; }
+        
+        .hero-clip {
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(230, 126, 34, 0.1);
+        }
+
+        .blob-shape {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-orange-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-3xl">🐾</span>
+                <span class="text-2xl font-extrabold tracking-tight text-slate-900">Pet<span class="text-orange-500">Pals</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-slate-600">
+                <a href="#services" class="hover:text-orange-500 transition">Services</a>
+                <a href="#about" class="hover:text-orange-500 transition">About Us</a>
+                <a href="#reviews" class="hover:text-orange-500 transition">Testimonials</a>
+            </div>
+           <a href="#schedule" class="bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-200">
+    Book a Visit
+</a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 bg-slate-900 overflow-hidden hero-clip">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <div class="inline-block bg-orange-500/20 text-orange-400 px-4 py-1 rounded-full text-sm font-bold mb-6 border border-orange-500/30">
+                    Trusted by 2,000+ Pet Parents
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-6">
+                    Life is Better with <br><span class="text-orange-500">Happy Pets</span>
+                </h1>
+                <p class="text-xl text-slate-300 mb-10 max-w-lg leading-relaxed">
+                    Expert pet care, grooming, and boarding services designed to give your furry family members the love they deserve while you're away.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-orange-500 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-orange-600 transition shadow-xl">
+                        Schedule an Appointment
+                    </button>
+                    <button class="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/20 transition backdrop-blur-sm">
+                        View Our Services
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-orange-500/20 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=1000" alt="Happy Dog" class="relative rounded-[2rem] border-4 border-white/10 shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative order-2 lg:order-1">
+                <div class="blob-shape bg-orange-100 absolute -inset-8 -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=800" alt="Vet with dog" class="rounded-[3rem] shadow-xl">
+            </div>
+            <div class="order-1 lg:order-2">
+                <h2 class="text-4xl font-extrabold mb-6 leading-tight">We’ll Really Make Your Pet Happy</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Our team consists of certified pet lovers and professional handlers. We don't just "watch" your pets; we engage them, play with them, and ensure their routine is strictly followed.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 font-semibold text-slate-700">
+                        <span class="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-xs">✓</span>
+                        24/7 Professional Supervision
+                    </li>
+                    <li class="flex items-center gap-3 font-semibold text-slate-700">
+                        <span class="w-6 h-6 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-xs">✓</span>
+                        Regular Photo & Video Updates
+                    </li>
+                    <li class="flex items-center gap-3 font-semibold text-slate-700">
+                        <span class="w-6 h-6 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-xs">✓</span>
+                        Emergency Vet-On-Call Support
+                    </li>
+                </ul>
+                <button class="text-orange-600 font-extrabold text-lg border-b-2 border-orange-200 hover:border-orange-500 transition pb-1">
+                    Meet Our Caregivers →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-orange-500 text-white rounded-[4rem]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Our Premium Services</h2>
+                <p class="text-orange-100 max-w-2xl mx-auto">From spa days to long-term stays, we provide a variety of care options tailored to your pet's personality.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-[2.5rem] text-slate-800 service-card transition-all duration-300">
+                    <div class="text-4xl mb-6">🏠</div>
+                    <h3 class="text-xl font-bold mb-3">Dog Boarding</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Cage-free, cozy spaces that feel exactly like home for your pup.</p>
+                    <a href="#" class="text-orange-500 font-bold hover:underline">Learn More</a>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] text-slate-800 service-card transition-all duration-300">
+                    <div class="text-4xl mb-6">🐈</div>
+                    <h3 class="text-xl font-bold mb-3">Cat Care</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Specialized quiet zones for our feline friends to lounge and play.</p>
+                    <a href="#" class="text-orange-500 font-bold hover:underline">Learn More</a>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] text-slate-800 service-card transition-all duration-300">
+                    <div class="text-4xl mb-6">✂️</div>
+                    <h3 class="text-xl font-bold mb-3">Pet Grooming</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Full spa treatments, haircuts, and nail clipping by experts.</p>
+                    <a href="#" class="text-orange-500 font-bold hover:underline">Learn More</a>
+                </div>
+                <div class="bg-white p-8 rounded-[2.5rem] text-slate-800 service-card transition-all duration-300">
+                    <div class="text-4xl mb-6">🍗</div>
+                    <h3 class="text-xl font-bold mb-3">Dietary Care</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Organic, nutrient-rich meals prepared for specific dietary needs.</p>
+                    <a href="#" class="text-orange-500 font-bold hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="py-24 bg-orange-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-extrabold mb-12">What Pet Parents Say</h2>
+        <div class="relative flex overflow-x-auto space-x-8 py-6">
+            <!-- Testimonial Card 1 -->
+            <div class="flex-shrink-0 w-80 bg-white p-8 rounded-3xl shadow-lg">
+                <p class="italic text-slate-700 mb-4">"PetPals is amazing! My dog Max loves it and I get updates all the time."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://i.pravatar.cc/100?u=1" class="w-12 h-12 rounded-full border-2 border-orange-500" alt="Client 1">
+                    <div>
+                        <p class="font-bold">Emily Bukola</p>
+                        <p class="text-sm text-slate-500">Golden Retriever Mom</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="flex-shrink-0 w-80 bg-white p-8 rounded-3xl shadow-lg">
+                <p class="italic text-slate-700 mb-4">"I trust PetPals 100%! My cats are happy and healthy every time I leave them."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://i.pravatar.cc/100?u=2" class="w-12 h-12 rounded-full border-2 border-orange-500" alt="Client 2">
+                    <div>
+                        <p class="font-bold">Mark Johnson</p>
+                        <p class="text-sm text-slate-500">Cat Owner</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="flex-shrink-0 w-80 bg-white p-8 rounded-3xl shadow-lg">
+                <p class="italic text-slate-700 mb-4">"Best boarding experience ever. Bruno came back happy and healthy."</p>
+                <div class="flex items-center gap-4">
+                    <img src="https://i.pravatar.cc/100?u=3" class="w-12 h-12 rounded-full border-2 border-orange-500" alt="Client 3">
+                    <div>
+                        <p class="font-bold">Sarah Jerry</p>
+                        <p class="text-sm text-slate-500">Dog Mom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mt-6 text-sm text-slate-500">Swipe to see more testimonials →</p>
+    </div>
+</section>
+<section id="awards" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-extrabold mb-12 italic text-slate-800">Recognized for Excellence</h2>
+        <div class="flex flex-wrap justify-center items-center gap-12">
+            <a href="#" class="group">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Forbes_logo.svg/960px-Forbes_logo.svg.png?_=20240111043940" 
+                     alt="Forbes Award" 
+                     class="h-20 grayscale group-hover:grayscale-0 transition-all duration-300 shadow hover:shadow-lg rounded-lg">
+            </a>
+            <a href="#" class="group">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Business_Insider_Logo.svg/1920px-Business_Insider_Logo.svg.png?_=20200326174147" 
+                     alt="Business Insider Award" 
+                     class="h-20 grayscale group-hover:grayscale-0 transition-all duration-300 shadow hover:shadow-lg rounded-lg">
+            </a>
+            <a href="#" class="group">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wiki_Laureate_insignia_of_Wiki_Award_%28Wikimedia_movement%29.svg/330px-Wiki_Laureate_insignia_of_Wiki_Award_%28Wikimedia_movement%29.svg.png" 
+                     alt="Inc Award" 
+                     class="h-20 grayscale group-hover:grayscale-0 transition-all duration-300 shadow hover:shadow-lg rounded-lg">
+            </a>
+            <a href="#" class="group">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+                     alt="Google Recognition" 
+                     class="h-20 grayscale group-hover:grayscale-0 transition-all duration-300 shadow hover:shadow-lg rounded-lg">
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-6">Why Choose Our Pet Care Company?</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center shrink-0">🤝</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Personalized Attention</h4>
+                            <p class="text-slate-600">We keep our intake small so every pet gets one-on-one interaction daily.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center shrink-0">📱</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Real-time Updates</h4>
+                            <p class="text-slate-600">Our mobile app lets you check in on your pet anytime with live camera access.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 p-8 bg-slate-50 rounded-3xl border border-slate-100">
+                    <p class="italic text-slate-600 mb-4">"PetPals is the only place I trust with my dog, Bruno. They genuinely care about his happiness, not just his safety."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/100?u=petparent" class="w-12 h-12 rounded-full border-2 border-orange-500" alt="Parent">
+                        <div>
+                            <p class="font-bold">Sarah Jenkins</p>
+                            <p class="text-sm text-slate-500">Golden Retriever Mom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=800" alt="Pets group" class="rounded-[4rem] shadow-2xl">
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl max-w-[240px]">
+                    <div class="flex gap-1 text-orange-500 mb-2">★★★★★</div>
+                    <p class="text-sm font-bold">4.9/5 Rating from 500+ Local Pet Parents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="py-24 bg-orange-50">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-extrabold mb-6 text-slate-800">Schedule a Visit</h2>
+        <p class="text-slate-600 mb-12">Fill out the form below and we’ll get back to you to confirm your pet’s visit.</p>
+        <form class="grid gap-6 text-left">
+            <input type="text" placeholder="Full Name" class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400">
+            <input type="email" placeholder="Email Address" class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400">
+            <input type="tel" placeholder="Phone Number" class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400">
+            <input type="date" class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400">
+            <textarea placeholder="Additional Notes" class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400"></textarea>
+            <button type="submit" class="bg-orange-500 text-white px-8 py-4 rounded-2xl font-bold hover:bg-orange-600 transition shadow-lg">
+                Submit Request
+            </button>
+        </form>
+    </div>
+</section>
+
+    <footer class="bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="text-3xl">🐾</span>
+                    <span class="text-2xl font-extrabold tracking-tight">Pet<span class="text-orange-500">Pals</span></span>
+                </div>
+                <p class="text-slate-400 max-w-xs mb-8">Making the world a better place, one wagging tail at a time. Professional care you can trust.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Services</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="#" class="hover:text-white transition">Dog Daycare</a></li>
+                    <li><a href="#" class="hover:text-white transition">Cat Boarding</a></li>
+                    <li><a href="#" class="hover:text-white transition">Grooming</a></li>
+                    <li><a href="#" class="hover:text-white transition">Dog Training</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Contact</h4>
+                <p class="text-slate-400 mb-2">15, Bajulaye Road,Shomolu,Lagos.</p>
+                <p class="text-slate-400 mb-4">(+234) 8123 733-4567</p>
+                <div class="flex gap-4">
+                    <span class="hover:text-orange-500 cursor-pointer">FB</span>
+                    <span class="hover:text-orange-500 cursor-pointer">IG</span>
+                    <span class="hover:text-orange-500 cursor-pointer">TW</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-white/5 text-center text-slate-500 text-sm">
+            © 2026 PetPals Care Company. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
